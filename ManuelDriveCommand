@@ -23,10 +23,10 @@ public class ManuelDriveCommand extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    double move = -Robot.oi.stick.getY();
-    double turn = Robot.oi.stick.getX();
+    double LMove = Robot.oi.Lstick.getY();
+    double RMove = Robot.oi.Rstick.getY();
 
-    Robot.driveSubsystem.motorDrive(move, turn);
+    Robot.driveSubsystem.tankDrive(LMove, RMove);
   }
 
   // Make this return true when this Command no longer needs to run execute()
