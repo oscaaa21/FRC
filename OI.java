@@ -13,6 +13,6 @@ package frc.robot;
  */
 public class OI {
 
-Joystick Lstick = new Joystick(RobotMap.Lstick.value);
+Joystick Lstick = new Joystick(0);
 Joystick RStick = new Joystick(1);
 }
